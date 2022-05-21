@@ -10,9 +10,7 @@ export interface ButtonProps
 function Button({ children, isLoading, ...rest }: ButtonProps) {
   return (
     <button
-      className={`${styles['button']} ${
-        isLoading ? styles['button--loading'] : ''
-      }`}
+      className={styles['button']}
       disabled={rest.disabled || isLoading}
       {...rest}
     >

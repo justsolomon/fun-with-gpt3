@@ -1,0 +1,18 @@
+@import 'styles/variables';
+
+.header {
+  padding: 60px 20% 20px 20%;
+
+  h1 {
+    font-size: $font-size--xl;
+    font-weight: $font-weight--bold;
+  }
+
+  @media #{$media-mobile} {
+    padding: 40px 40px 20px 40px;
+
+    h1 {
+      font-size: $font-size--lg;
+    }
+  }
+}

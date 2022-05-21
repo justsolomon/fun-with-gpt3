@@ -1,0 +1,9 @@
+@import 'styles/variables';
+
+.main-content {
+  padding: 0 20%;
+
+  @media #{$media-mobile} {
+    padding: 0 40px;
+  }
+}
