@@ -21,4 +21,9 @@
     border-radius: $border-radius--sm;
     font-family: $font-family;
   }
+
+  &__error {
+    margin-bottom: 8px;
+    color: $error-color;
+  }
 }
