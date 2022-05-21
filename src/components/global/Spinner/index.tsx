@@ -3,7 +3,7 @@ interface SpinnerProps {
   size?: string;
 }
 
-const Spinner = ({ color = '#11468f', size = '32px' }: SpinnerProps) => {
+const Spinner = ({ color = '#ffffff', size = '24px' }: SpinnerProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
