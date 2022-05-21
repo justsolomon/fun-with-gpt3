@@ -1,9 +1,17 @@
 @import 'styles/variables';
 
 .main-content {
-  padding: 0 20%;
+  padding: 0 20% 40px 20%;
+
+  @media #{$media-tablet} {
+    padding: 0 15% 40px 15%;
+  }
 
   @media #{$media-mobile} {
-    padding: 0 40px;
+    padding: 0 40px 40px 40px;
+  }
+
+  @media #{$media-mobile--sm} {
+    padding: 0 20px 40px 20px;
   }
 }

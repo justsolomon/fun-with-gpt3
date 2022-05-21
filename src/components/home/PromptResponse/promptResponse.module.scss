@@ -1,0 +1,57 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.prompt-response {
+  @include flex(column);
+
+  padding: 16px;
+  border-radius: $border-radius--sm;
+  background-color: $gray;
+
+  &__section {
+    @include flex(row);
+
+    width: 100%;
+    line-height: 120%;
+
+    &__label {
+      width: 18%;
+      font-weight: $font-weight--bold;
+    }
+
+    &__value {
+      width: 82%;
+    }
+
+    &:first-child {
+      margin-bottom: 12px;
+    }
+  }
+
+  @media #{$media-desktop--sm} {
+    &__section {
+      &__label {
+        width: 22%;
+      }
+
+      &__value {
+        width: 77%;
+      }
+    }
+  }
+
+  @media #{$media-mobile} {
+    font-size: $font-size--sm;
+  }
+
+  @media #{$media-mobile--sm} {
+    &__section {
+      flex-direction: column;
+
+      &__label,
+      &__value {
+        width: 100%;
+      }
+    }
+  }
+}

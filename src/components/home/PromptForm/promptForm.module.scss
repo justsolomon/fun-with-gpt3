@@ -1,0 +1,24 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.prompt-form {
+  @include flex(column, flex-end);
+
+  &__label,
+  &__textarea {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  &__label {
+    font-weight: $font-weight--bold;
+  }
+
+  &__textarea {
+    height: 150px;
+    padding: 8px 12px;
+    font-size: $font-size--base;
+    border-radius: $border-radius--sm;
+    font-family: $font-family;
+  }
+}
