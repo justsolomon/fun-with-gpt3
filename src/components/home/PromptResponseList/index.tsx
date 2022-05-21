@@ -11,11 +11,15 @@ const PromptResponseList = ({ prompts }: PromptResponseListProps) => {
     <div className={styles['response-list']}>
       <h2 className={styles['response-list__header']}>Responses</h2>
 
-      <ul className={styles['response-list__items']}>
-        {prompts.map((prompt) => (
-          <PromptResponse {...prompt} key={prompt.id} />
-        ))}
-      </ul>
+      {prompts.length ? (
+        <ul className={styles['response-list__items']}>
+          {prompts.map((prompt) => (
+            <PromptResponse {...prompt} key={prompt.id} />
+          ))}
+        </ul>
+      ) : (
+        <p>Your prompt responses will appear here</p>
+      )}
     </div>
   );
 };
