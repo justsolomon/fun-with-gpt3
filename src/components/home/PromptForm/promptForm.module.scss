@@ -15,7 +15,9 @@
   }
 
   &__textarea {
-    height: 150px;
+    min-height: 150px;
+    min-width: 100%;
+    max-width: 100%;
     padding: 8px 12px;
     font-size: $font-size--base;
     border-radius: $border-radius--sm;
