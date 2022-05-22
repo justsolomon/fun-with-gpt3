@@ -40,10 +40,6 @@
     }
   }
 
-  @media #{$media-mobile} {
-    font-size: $font-size--sm;
-  }
-
   @media #{$media-mobile--sm} {
     &__section {
       flex-direction: column;
